@@ -8,10 +8,6 @@ export const styles = {
     borderTop: '1px solid #eaeaea',
     justifyContent: 'center',
     alignItems: 'center',
-
-    '@media (prefers-color-scheme: dark)': {
-      borderColor: '#222',
-    },
   }),
   footerLink: {
     display: 'flex',

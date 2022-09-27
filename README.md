@@ -1,7 +1,7 @@
 # Next.js Template
 
 ## Structure
-- Next.js
+- Next.js (w/ TypeScript)
 - @emotion
   - Using object style
 - normalize-css

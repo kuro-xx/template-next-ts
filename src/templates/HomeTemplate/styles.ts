@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { FONT_SIZE } from '~/styles/config';
 
 export const styles = {
   root: css({
@@ -13,11 +14,9 @@ export const styles = {
   title: css({
     margin: 0,
     lineHeight: 1.15,
-    fontSize: '4rem',
     textAlign: 'center',
   }),
   titleLink: css({
-    color: '#0070f3',
     textDecoration: 'none',
 
     '&:hover, &:focus, &:active': {
@@ -27,20 +26,14 @@ export const styles = {
   description: css({
     margin: '4rem 0',
     lineHeight: 1.5,
-    fontSize: '1.5rem',
     textAlign: 'center',
   }),
   code: css({
     background: '#fafafa',
     borderRadius: '5px',
     padding: '0.75rem',
-    fontSize: '1.1rem',
     fontFamily:
       'Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace',
-
-    '@media (prefers-color-scheme: dark)': {
-      background: '#111',
-    },
   }),
   grid: css({
     display: 'flex',
@@ -69,18 +62,13 @@ export const styles = {
       color: '#0070f3',
       borderColor: '#0070f3',
     },
-
-    '@media (prefers-color-scheme: dark)': {
-      borderColor: '#222',
-    },
   }),
   cardTitle: css({
     margin: '0 0 1rem 0',
-    fontSize: '1.5rem',
+    fontSize: FONT_SIZE.LARGE,
   }),
   cardBody: css({
     margin: 0,
-    fontSize: '1.25rem',
     lineHeight: 1.5,
   }),
 };

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 import { FONT_SIZE } from '~/styles/config';
 
-export const styles = {
+export const createStyles = () => ({
   root: css({
     minHeight: '100vh',
     padding: '4rem 0',
@@ -71,4 +71,4 @@ export const styles = {
     margin: 0,
     lineHeight: 1.5,
   }),
-};
+});

@@ -1,6 +1,8 @@
-import { styles } from './styles';
+import { MyButton } from '~/kernel/components/elements/button/MyButton';
+import { createStyles } from './createStyles';
 
 export const HomeTemplate = () => {
+  const styles = createStyles();
   return (
     <main css={styles.root}>
       <h1 css={styles.title}>
@@ -9,6 +11,7 @@ export const HomeTemplate = () => {
           Next.js!
         </a>
       </h1>
+      <MyButton>ボタン</MyButton>
 
       <p css={styles.description}>
         Get started by editing <code css={styles.code}>pages/index.tsx</code>

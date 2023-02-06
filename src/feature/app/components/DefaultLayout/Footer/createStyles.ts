@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
-export const styles = {
-  footer: css({
+export const createStyles = () => ({
+  root: css({
     display: 'flex',
     flex: 1,
     padding: '2rem 0',
@@ -9,10 +9,15 @@ export const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   }),
-  footerLink: {
+  link: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexGrow: 1,
   },
-};
+  logo: {
+    display: 'inline-block',
+    width: 70,
+    marginLeft: '0.5em',
+  },
+});

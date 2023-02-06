@@ -1,9 +1,10 @@
-import { Global } from '@emotion/react';
+import { ThemeProvider } from '@emotion/react';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
-import { globalStyles } from '~/styles/globals';
+import { theme } from '~/core/emotion/theme';
+import { GlobalStyles } from '~/core/emotion/GlobalStyles';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: React.ReactElement) => React.ReactNode;
@@ -22,8 +23,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <meta name="description" content="Default description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Global styles={globalStyles} />
-      {getLayout(<Component {...pageProps} />)}
+      <GlobalStyles />
+      <ThemeProvider theme={theme.default}>{getLayout(<Component {...pageProps} />)}</ThemeProvider>
     </>
   );
 }

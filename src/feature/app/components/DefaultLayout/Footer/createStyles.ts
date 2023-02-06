@@ -1,11 +1,11 @@
-import { css } from '@emotion/react';
+import { css, Theme } from '@emotion/react';
 
-export const createStyles = () => ({
+export const createStyles = (theme: Theme) => ({
   root: css({
     display: 'flex',
     flex: 1,
     padding: '2rem 0',
-    borderTop: '1px solid #eaeaea',
+    borderTop: `1px solid ${theme.color.divider.code}`,
     justifyContent: 'center',
     alignItems: 'center',
   }),

@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { FONT_SIZE } from '~/styles/config';
+import { FONT_SIZE } from '~/core/styles/emotion';
 
 export const createStyles = () => ({
   root: css({

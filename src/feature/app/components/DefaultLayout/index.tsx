@@ -5,13 +5,14 @@ import { Header } from './Header';
 
 type Props = Readonly<{
   children: React.ReactNode;
+  isHome?: boolean;
 }>;
 
-export const DefaultLayout = ({ children }: Props) => {
+export const DefaultLayout = ({ children, isHome }: Props) => {
   const styles = createStyles();
   return (
     <div css={styles.root}>
-      <Header />
+      <Header isHome={isHome} />
       {children}
       <Footer />
     </div>

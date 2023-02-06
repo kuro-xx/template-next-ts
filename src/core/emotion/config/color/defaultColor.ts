@@ -65,6 +65,7 @@ export const defaultColor: Color = {
   ...colorVariant,
   palette,
   text: palette.black,
+  contrastText: palette.white,
   link: colorVariant.primary.main,
   background: palette.white,
   divider: palette.gray,

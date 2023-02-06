@@ -23,8 +23,10 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <meta name="description" content="Default description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GlobalStyles />
-      <ThemeProvider theme={theme.default}>{getLayout(<Component {...pageProps} />)}</ThemeProvider>
+      <ThemeProvider theme={theme.default}>
+        <GlobalStyles />
+        {getLayout(<Component {...pageProps} />)}
+      </ThemeProvider>
     </>
   );
 }

@@ -2,21 +2,13 @@ import { css, Theme } from '@emotion/react';
 
 export const createStyles = (theme: Theme) => ({
   root: css({
-    backgroundColor: 'transparent',
-    position: 'relative',
+    position: 'sticky',
+    top: 0,
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    minHeight: 80,
+    backgroundColor: theme.color.primary.main.code,
     zIndex: theme.zIndex.header,
   }),
-  brand: css({
-    position: 'fixed',
-    top: 0,
-    left: 0,
-    padding: 40,
-    backgroundColor: '#fff',
-    borderRadius: '0 0 16px 0',
-    cursor: 'pointer',
-  }),
-  logo: {
-    display: 'inline-block',
-    width: 105,
-  },
 });

@@ -41,6 +41,7 @@ type Shadow = {
 type Color = ColorVariant & {
   palette: Palette;
   text: ColorValue;
+  contrastText: ColorValue;
   link: ColorValue;
   background: ColorValue;
   divider: ColorValue;

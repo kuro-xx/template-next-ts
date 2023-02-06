@@ -3,6 +3,7 @@ import { css, Global, useTheme } from '@emotion/react';
 
 export const GlobalStyles = () => {
   const theme = useTheme();
+  console.log(theme);
   const styles = css`
     html,
     body {
@@ -19,8 +20,12 @@ export const GlobalStyles = () => {
     }
 
     a {
-      color: ${theme.font.family};
+      color: ${theme.color.primary.main.code};
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     * {

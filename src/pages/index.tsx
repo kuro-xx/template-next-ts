@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import { DefaultLayout } from '~/components/organisms/layout/DefaultLayout';
-import { HomeTemplate } from '~/templates/HomeTemplate';
+import { DefaultLayout } from '~/feature/app/components/DefaultLayout';
+import { HomeTemplate } from '~/feature/home/HomeTemplate';
 import { NextPageWithLayout } from '~/pages/_app';
 
 const Home: NextPageWithLayout = () => {
@@ -16,6 +16,6 @@ const Home: NextPageWithLayout = () => {
   );
 };
 
-Home.getLayout = (page: React.ReactElement) => <DefaultLayout>{page}</DefaultLayout>;
+Home.getLayout = (page: React.ReactElement) => <DefaultLayout isHome>{page}</DefaultLayout>;
 
 export default Home;

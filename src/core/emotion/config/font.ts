@@ -11,7 +11,7 @@ export const font: Font = {
   },
   family: {
     gothic:
-      '"Inter", -apple-system, "游ゴシック", "Yu Gothic", BlinkMacSystemFont, "Segoe UI", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+      '"Inter", -apple-system, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", BlinkMacSystemFont, "Segoe UI", Helvetica, Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
   },
   lineHeight: {
     normal: 1.4,

@@ -16,7 +16,7 @@ export const HeaderBrand = ({ isHeading }: Props) => {
     <RootComponent css={styles.root}>
       <Link href="/" passHref>
         <a css={styles.logo}>
-          <MyAppLogo />
+          <MyAppLogo color="contrastText" />
         </a>
       </Link>
     </RootComponent>

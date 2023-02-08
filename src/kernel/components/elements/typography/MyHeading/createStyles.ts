@@ -8,5 +8,6 @@ export const createStyles = (theme: Theme, variant: HeadingType) => ({
     padding: 0,
     lineHeight: theme.font.lineHeight.heading,
     fontSize: theme.font.size[variant],
+    fontWeight: 'bold',
   }),
 });

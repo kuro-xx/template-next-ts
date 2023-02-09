@@ -46,6 +46,11 @@ type Color = ColorVariant & {
   background: ColorValue;
   divider: ColorValue;
   shadow: Shadow;
+  feature: {
+    home: {
+      sectionHeader: ColorValue;
+    };
+  };
 };
 
 type RemValue = `${number}rem`;

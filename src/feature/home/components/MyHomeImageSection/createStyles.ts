@@ -45,7 +45,7 @@ export const createStyles = (theme: Theme, isEven: boolean) => ({
     top: 0,
     left: 'auto',
     padding: '40px 12px 8px',
-    backgroundColor: theme.color.primary.main.code,
+    backgroundColor: theme.color.primary.dark.code,
     color: theme.color.contrastText.code,
   }),
   header: css({

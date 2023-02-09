@@ -15,17 +15,23 @@ export const HomeTemplate = () => {
       <MyHomeSection>
         <MyHomeImageSection heading="会社概要" number={1} image={companyImage}>
           <p>御業株式会社の設立や所在地、代表者、事業内容など、会社の概要について記載しております。</p>
-          <MyButton>詳しく見る</MyButton>
+          <MyButton type="link" href="/about" variant="contained" color="primary">
+            詳しく見る
+          </MyButton>
         </MyHomeImageSection>
         <MyHomeImageSection heading="事業内容" number={2} image={servicesImage}>
           <p>
             システムインテグレーションサービス、システムエンジニアリングサービス、自社開発など、事業の内容についてご紹介しております。
           </p>
-          <MyButton>詳しく見る</MyButton>
+          <MyButton type="link" href="/services" variant="contained" color="primary">
+            詳しく見る
+          </MyButton>
         </MyHomeImageSection>
         <MyHomeImageSection heading="ニュース" number={3} image={newsImage}>
           <p>開発実績や自社開発のサービス、また、社会/暮らしに役立つ様々な情報をお届けしていきます。</p>
-          <MyButton>詳しく見る</MyButton>
+          <MyButton type="link" href="/news" variant="contained" color="primary">
+            詳しく見る
+          </MyButton>
         </MyHomeImageSection>
       </MyHomeSection>
     </main>

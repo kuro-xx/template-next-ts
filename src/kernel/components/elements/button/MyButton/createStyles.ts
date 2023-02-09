@@ -7,7 +7,7 @@ export const createStyles = (theme: Theme, color?: ColorOption) => ({
   root: css({
     display: 'inline-block',
     minWidth: 128,
-    padding: '1em 1.5em',
+    padding: '0.75em 1.5em',
     border: '1px solid transparent',
     borderRadius: '5px',
     backgroundColor: 'transparent',

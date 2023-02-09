@@ -33,7 +33,7 @@ export const MyButton = (props: Props) => {
         <a
           css={[styles.root, styles.variant[variant ?? 'default']]}
           onClick={onClick}
-          target={type !== 'link' ? '_self' : '_blank'}
+          target={type === 'link' ? '_self' : '_blank'}
         >
           {children}
         </a>

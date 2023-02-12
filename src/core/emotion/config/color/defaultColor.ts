@@ -2,7 +2,7 @@ import { Color, ColorVariant, Palette, Shadow } from '~/core/emotion/@types/them
 
 const palette: Palette = {
   black: {
-    code: '#444444',
+    code: '#241913',
     rgb: '68,68,68',
   },
   white: {
@@ -70,4 +70,12 @@ export const defaultColor: Color = {
   background: palette.white,
   divider: palette.gray,
   shadow,
+  feature: {
+    home: {
+      sectionHeader: {
+        code: '#36373C',
+        rgb: '54,55,60',
+      },
+    },
+  },
 };

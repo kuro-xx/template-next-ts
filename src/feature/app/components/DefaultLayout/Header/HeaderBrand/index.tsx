@@ -10,28 +10,15 @@ type Props = {
 export const HeaderBrand = ({ isHeading }: Props) => {
   const theme = useTheme();
   const styles = createStyles(theme);
-
-  if (isHeading) {
-    return (
-      <h1 css={styles.root}>
-        <Logo style={styles.logo} />
-      </h1>
-    );
-  }
+  const RootComponent = isHeading ? 'h1' : 'div';
 
   return (
-    <div css={styles.root}>
-      <Logo style={styles.logo} />
-    </div>
-  );
-};
-
-const Logo = ({ style }: { style: SerializedStyles }) => {
-  return (
-    <Link href="/" passHref>
-      <a css={style}>
-        <MyAppLogo />
-      </a>
-    </Link>
+    <RootComponent css={styles.root}>
+      <Link href="/" passHref>
+        <a css={styles.logo}>
+          <MyAppLogo color="contrastText" />
+        </a>
+      </Link>
+    </RootComponent>
   );
 };

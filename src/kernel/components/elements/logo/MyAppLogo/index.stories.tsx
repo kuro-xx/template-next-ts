@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta } from '@storybook/react';
 
 import { MyAppLogo } from './index';
 
@@ -7,9 +7,37 @@ import { MyAppLogo } from './index';
 export default {
   title: 'Kernel/Elements/logo/MyAppLogo',
   component: MyAppLogo,
+  parameters: {
+    docs: {
+      description: {
+        component: `
+ロゴを表示するコンポーネント<br />
+横幅は親要素の横幅に依存します。
+        `,
+      },
+    },
+  },
 } as ComponentMeta<typeof MyAppLogo>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof MyAppLogo> = () => <MyAppLogo />;
+export const Default = () => <MyAppLogo />;
 
-export const Default = Template.bind({});
+export const Colors = () => (
+  <>
+    <div style={{ width: 200 }}>
+      <MyAppLogo />
+    </div>
+    <div style={{ width: 200, background: '#000' }}>
+      <MyAppLogo color="contrastText" />
+    </div>
+  </>
+);
+Colors.parameters = {
+  docs: {
+    description: {
+      story: `
+color属性に値を設定することで色の変更ができます。<br />
+- contextColor
+      `,
+    },
+  },
+};

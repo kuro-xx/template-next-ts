@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta } from '@storybook/react';
 
 import { MyButton } from './index';
 
@@ -9,7 +9,39 @@ export default {
   component: MyButton,
 } as ComponentMeta<typeof MyButton>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof MyButton> = () => <MyButton>ボタン</MyButton>;
+export const Default = () => (
+  <>
+    <MyButton type="button">ボタン (default)</MyButton>
+    <MyButton type="button" color="primary">
+      ボタン (primary)
+    </MyButton>
+    <MyButton type="button" color="secondary">
+      ボタン (secondary)
+    </MyButton>
+  </>
+);
 
-export const Default = Template.bind({});
+export const Contained = () => (
+  <>
+    <MyButton type="button" variant="contained">
+      ボタン (default)
+    </MyButton>
+    <MyButton type="button" variant="contained" color="primary">
+      ボタン (primary)
+    </MyButton>
+    <MyButton type="button" variant="contained" color="secondary">
+      ボタン (secondary)
+    </MyButton>
+  </>
+);
+
+export const Link = () => (
+  <>
+    <MyButton type="link" href="#">
+      ボタン (link)
+    </MyButton>
+    <MyButton type="external-link" href="#">
+      ボタン (external-link)
+    </MyButton>
+  </>
+);

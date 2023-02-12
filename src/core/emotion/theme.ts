@@ -1,4 +1,4 @@
-import { breakpoint } from './config/breakpoint';
+import { breakpoint } from '~/core/libs/utils/MediaUtils';
 import { defaultColor } from './config/color/defaultColor';
 import { font } from './config/font';
 import { radius } from './config/radius';

@@ -1,7 +1,6 @@
 import { useTheme } from '@emotion/react';
-import image, { StaticImageData } from 'next/image';
-import { Children } from 'react';
-import { NumberUtils } from '~/core/libs/NumberUtils';
+import { StaticImageData } from 'next/image';
+import { NumberUtils } from '~/core/libs/utils/NumberUtils';
 import { MyPlainImage } from '~/kernel/components/elements/image/MyPlainImage';
 import { MyHeading } from '~/kernel/components/elements/typography/MyHeading';
 import { createStyles } from './createStyles';

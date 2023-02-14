@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint --dir src",
     "format": "next lint --cache --fix src/ && prettier --write src/",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006 --docs",
+    "build-storybook": "build-storybook --docs",
     "test": "jest --watch"
   },
   "dependencies": {

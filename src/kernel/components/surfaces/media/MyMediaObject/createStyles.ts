@@ -12,7 +12,7 @@ export const createStyles = (size: Size, position: Position, align: Align) => ({
     display: 'flex',
     flexDirection: position === 'left' ? 'row' : 'row-reverse',
     alignItems: align,
-    gap: 32,
+    gap: 24,
   }),
   image: css({
     width: `${imageRatio * size}%`,

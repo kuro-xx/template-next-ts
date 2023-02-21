@@ -2,7 +2,7 @@ import { DeviceOptions } from '../@types/theme';
 
 export const deviceOptions: DeviceOptions = {
   contentsWidth: {
-    desktop: '1000px',
+    desktop: '1200px',
     laptop: '1000px',
     tablet: 'auto',
     mobile: 'auto',

@@ -1,6 +1,6 @@
 import { useTheme } from '@emotion/react';
 import Link from 'next/link';
-import { BreadcrumsItem } from '~/feature/app/ui-domain/Breadcrumbs';
+import { BreadcrumsItem } from '~/feature/app/ui-domain/BreadcrumsItem';
 import { createStyles } from './createStyles';
 
 type Props = Readonly<{

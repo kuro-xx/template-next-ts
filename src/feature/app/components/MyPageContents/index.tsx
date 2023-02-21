@@ -1,6 +1,6 @@
 import { useTheme } from '@emotion/react';
 import React from 'react';
-import { BreadcrumsItem } from '../../ui-domain/Breadcrumbs';
+import { BreadcrumsItem } from '../../ui-domain/BreadcrumsItem';
 import { createStyles } from './createStyles';
 import { MyBreadcrumbs } from './MyBreadcrumbs';
 import { MyHeadline } from './MyHeadline';

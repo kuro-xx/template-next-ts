@@ -3,7 +3,7 @@ import { styleSnippet } from '~/core/emotion/styleSnippet';
 
 export const createStyles = (theme: Theme) => ({
   root: css(styleSnippet.wrapper, {
-    marginBottom: 20,
+    marginBottom: 32,
     padding: '56px 64px 48px',
     border: `1px solid ${theme.color.divider.code}`,
   }),

@@ -2,7 +2,7 @@ import { useTheme } from '@emotion/react';
 import Link from 'next/link';
 import { createStyles } from './createStyles';
 
-export const HeaderMenu = () => {
+export const MyHeaderMenu = () => {
   const theme = useTheme();
   const styles = createStyles(theme);
 

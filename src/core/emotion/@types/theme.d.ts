@@ -9,6 +9,7 @@ declare module '@emotion/react' {
     radius: Radius;
     transition: Transition;
     zIndex: ZIndex;
+    deviceOptions: DeviceOptions;
   }
 }
 
@@ -99,4 +100,20 @@ type Radius = {
 
 type Transition = {
   ease: string;
+};
+
+type StyleUnit = `${number}px` | `${number}%` | `${number}em` | `${number}rem` | 'auto';
+type DeviceOptions = {
+  contentsWidth: {
+    desktop: StyleUnit;
+    laptop: StyleUnit;
+    tablet: StyleUnit;
+    mobile: StyleUnit;
+  };
+  contentsBleed: {
+    desktop: StyleUnit;
+    laptop: StyleUnit;
+    tablet: StyleUnit;
+    mobile: StyleUnit;
+  };
 };

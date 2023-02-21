@@ -7,7 +7,7 @@ type Props = {
   isHeading?: boolean;
 };
 
-export const HeaderBrand = ({ isHeading }: Props) => {
+export const MyHeaderBrand = ({ isHeading }: Props) => {
   const theme = useTheme();
   const styles = createStyles(theme);
   const RootComponent = isHeading ? 'h1' : 'div';

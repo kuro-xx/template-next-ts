@@ -14,7 +14,7 @@ export const createStyles = (theme: Theme) => ({
   header: css(styleSnippet.wrapper, {
     marginBottom: 24,
   }),
-  body: css(styleSnippet.wrapper, {
+  content: css(styleSnippet.wrapper, {
     padding: 40,
     color: theme.color.palette.white.code,
     textAlign: 'center',

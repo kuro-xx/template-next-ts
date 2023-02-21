@@ -2,13 +2,14 @@ import { MyHomeHeroView } from './components/MyHomeHeroView';
 import { MyHomeImageSection } from './components/MyHomeImageSection';
 import { MyHomeSection } from './components/MyHomeSection';
 import { createStyles } from './createStyles';
-import companyImage from './assets/images/picture-home-company.jpg';
+import companyImage from './shared/images/picture-home-company.jpg';
 import servicesImage from './assets/images/picture-home-services.jpg';
 import newsImage from './assets/images/picture-home-news.jpg';
 import { MyButton } from '~/kernel/components/elements/button/MyButton';
 
 export const HomeTemplate = () => {
   const styles = createStyles();
+
   return (
     <main css={styles.root}>
       <MyHomeHeroView />

@@ -1,19 +1,19 @@
 import Head from 'next/head';
 import React from 'react';
 import { MyDefaultLayout } from '~/feature/app/components/MyDefaultLayout';
-import { NewsTemplate } from '~/feature/news/NewsTemplate';
+import { AboutTemplate } from '~/feature/abount/AboutTemplate';
 import { NextPageWithLayout } from '~/pages/_app';
 
 const News: NextPageWithLayout = () => {
-  const breadcrumbs = [{ id: 'news', name: 'ニュース', path: '/news' }];
+  const breadcrumbs = [{ id: 'news', name: '会社概要', path: '/about' }];
 
   return (
     <>
       <Head>
-        <title>ニュース</title>
+        <title>会社概要</title>
         <meta name="description" content="This is Next App Home." />
       </Head>
-      <NewsTemplate breadcrumbs={breadcrumbs} />
+      <AboutTemplate breadcrumbs={breadcrumbs} />
     </>
   );
 };

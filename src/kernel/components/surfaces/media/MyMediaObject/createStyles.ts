@@ -18,6 +18,7 @@ export const createStyles = (size: Size, position: Position, align: Align) => ({
     width: `${imageRatio * size}%`,
     margin: 0,
     padding: 0,
+    textAlign: 'center',
   }),
   content: css(styleSnippet.wrapper, {
     flex: 1,

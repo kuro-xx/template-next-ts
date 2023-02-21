@@ -10,7 +10,7 @@ export const MyHomeHeroView = () => {
   const styles = createStyles(theme);
   return (
     <section css={styles.root}>
-      <div css={styles.body}>
+      <div css={styles.content}>
         <header css={styles.header}>
           <MyHeading variant="h2">善良なる革命家を育てる</MyHeading>
         </header>

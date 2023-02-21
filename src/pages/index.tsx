@@ -8,7 +8,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Next Home</title>
+        <title>ホーム</title>
         <meta name="description" content="This is Next App Home." />
       </Head>
       <HomeTemplate />

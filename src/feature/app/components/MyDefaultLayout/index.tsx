@@ -1,20 +1,20 @@
 import React from 'react';
-import { Footer } from './Footer';
+import { MyFooter } from './MyFooter';
 import { createStyles } from './createStyles';
-import { Header } from './Header';
+import { MyHeader } from './MyHeader';
 
 type Props = Readonly<{
   children: React.ReactNode;
   isHome?: boolean;
 }>;
 
-export const DefaultLayout = ({ children, isHome }: Props) => {
+export const MyDefaultLayout = ({ children, isHome }: Props) => {
   const styles = createStyles();
   return (
     <div css={styles.root}>
-      <Header isHome={isHome} />
+      <MyHeader isHome={isHome} />
       {children}
-      <Footer />
+      <MyFooter />
     </div>
   );
 };

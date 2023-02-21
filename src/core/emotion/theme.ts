@@ -5,6 +5,7 @@ import { radius } from './config/radius';
 import { transition } from './config/transition';
 import { zIndex } from './config/zIndex';
 import { aspectRatio } from './config/aspectRatio';
+import { deviceOptions } from './config/deviceOptions';
 
 export const theme = {
   default: {
@@ -15,5 +16,6 @@ export const theme = {
     radius,
     transition,
     zIndex,
+    deviceOptions,
   },
 };

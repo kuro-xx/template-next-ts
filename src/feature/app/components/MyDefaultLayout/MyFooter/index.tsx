@@ -2,7 +2,7 @@ import { useTheme } from '@emotion/react';
 import { MyAppLogo } from '~/kernel/components/elements/logo/MyAppLogo';
 import { createStyles } from './createStyles';
 
-export const Footer = () => {
+export const MyFooter = () => {
   const theme = useTheme();
   const styles = createStyles(theme);
   return (
